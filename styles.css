@@ -1,0 +1,51 @@
+/* Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: red;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Timer Container */
+.container {
+    text-align: center;
+    background: black;
+    color: red;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Countdown Timer */
+h1 {
+    margin-bottom: 20px;
+}
+
+#countdown {
+    width: 850px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    font-size: 5em;
+    text-align: center;
+    overflow: hidden; /* Prevents resizing due to long text */
+    white-space: nowrap; /* Ensures text stays on one line */
+}
+
+/* Large Text (Keeps the larger font size but doesn't affect box size) */
+.large-text {
+    font-size: 8em; /* Increases text size without affecting dimensions */
+}
+
+/* Animated Sprite */
+#sprite {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    transform: translateY(-50%);
+    transition: left 0.8s ease-in-out, top 0.8s ease-in-out;
+    z-index: 9999;
+}
